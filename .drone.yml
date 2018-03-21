@@ -1,0 +1,16 @@
+pipeline:
+  hello:
+    group: build
+    image: alpine
+    commands:
+      - echo hello
+  world:
+    group: build
+    image: alpine
+    commands:
+      - echo world
+
+  done:
+    image: alpine
+    commands:
+      - echo done
