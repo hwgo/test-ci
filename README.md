@@ -1,3 +1,4 @@
-[![Build Status](http://drone.local/api/badges/hwgo/test-ci/status.svg)](http://drone.local/hwgo/test-ci)
+[![Build Status](http://dnssayhgxehy.huwochuxing.com/api/badges/hwgo/test-ci/status.svg)](http://dnssayhgxehy.huwochuxing.com/hwgo/test-ci)
 
 # Drone
+.
