@@ -14,3 +14,8 @@ pipeline:
     image: alpine
     commands:
       - echo done
+
+  kubectl:
+    image: komljen/drone-kubectl-helm
+    secrets: [ kubernetes_server, kubernetes_cert, kubernetes_token ]
+    kubectl: "get nodes"
