@@ -19,3 +19,9 @@ pipeline:
     image: komljen/drone-kubectl-helm
     secrets: [ kubernetes_server, kubernetes_cert, kubernetes_token ]
     kubectl: "get nodes"
+
+  docker:
+    image: plugins/docker
+    secrets: [ docker_username, docker_password ]
+    repo: huwo/echoserver
+    tags: ${DRONE_COMMIT_SHA}
