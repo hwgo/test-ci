@@ -13,6 +13,6 @@ pipeline:
   docker:
     image: plugins/docker:17.05
     secrets: [ docker_username, docker_password ]
-    repo: callme/echoserver
+    repo: https://registry.cn-shenzhen.aliyuncs.com/callme/echoserver
     tags: ${DRONE_COMMIT_SHA}
     registry: https://registry.cn-shenzhen.aliyuncs.com/callme/
