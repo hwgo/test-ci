@@ -13,7 +13,7 @@ pipeline:
   docker:
     image: plugins/docker
     secrets: [ docker_username, docker_password ]
-    repo: huwo/echoserver
+    repo: callme/echoserver
     tags: ${DRONE_COMMIT_SHA}
-    registry: docker.io
+    registry: registry.cn-shenzhen.aliyuncs.com
     debug: true
