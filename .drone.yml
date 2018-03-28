@@ -11,7 +11,7 @@ pipeline:
     kubectl: "get nodes"
 
   docker:
-    image: plugins/docker:17.05
+    image: plugins/docker
     secrets: [ docker_username, docker_password ]
     repo: huwo/echoserver
     tags: ${DRONE_COMMIT_SHA}
